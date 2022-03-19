@@ -3,12 +3,6 @@
 $(document).ready(function(){
 $("p").alert("  Hello")
 
-
-})
-
-
-
-
 $('.btn.order').click(function() {
     var sizeOfPizza = $(".size option:selected").val();
     var toppingsOfPizza = $(".toppings option:selected").val();
@@ -54,6 +48,19 @@ function Pizza(size, toppings, crust, total, orderNo) {
   });
 })
 
+})
 
 
+$(document).ready(function(){
+$("#blue").click(function(){
+alert('you have selected your toppings')
 
+
+})})
+
+$(docuent).ready(function(){
+("#red").click(function(){
+    alert("you have selected size of pizza")
+})
+
+})
