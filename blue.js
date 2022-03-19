@@ -4,12 +4,12 @@ $(document).ready(function(){
 $("p").alert("  Hello")
 
 $('.btn.order').click(function() {
-    var sizeOfPizza = $(".size option:selected").val();
-    var toppingsOfPizza = $(".toppings option:selected").val();
-    var crustOfPizza = $(".crust option:selected").val();
-    var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
-    var order = 1;
-    var grandTotal = 0;
+    let sizeOfPizza = $(".size option:selected").val();
+    let toppingsOfPizza = $(".toppings option:selected").val();
+    let crustOfPizza = $(".crust option:selected").val();
+    let total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
+    let order = 1;
+    let grandTotal = 0;
 
     $("table").show();
     $(".additional-buttons").show();
@@ -40,9 +40,9 @@ function Pizza(size, toppings, crust, total, orderNo) {
     grandTotal = grandTotal + total;
 
 
-    var newPizza = new Pizza(sizeOfPizza, toppingsOfPizza, crustOfPizza, total, order);
+    let newPizza = new Pizza(sizeOfPizza, toppingsOfPizza, crustOfPizza, total, order);
 
-    var newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' + $(".size option:selected").text() + " - " + newPizza.size + '</td><td id="toppings">' + $(".toppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="crust">' + $(".crust option:selected").text() + " - " + newPizza.crust + '</td><td id="total">' + newPizza.total + '</td></tr>'
+    let newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' + $(".size option:selected").text() + " - " + newPizza.size + '</td><td id="toppings">' + $(".toppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="crust">' + $(".crust option:selected").text() + " - " + newPizza.crust + '</td><td id="total">' + newPizza.total + '</td></tr>'
 
     $("#pizza").append(newRow);
   });
