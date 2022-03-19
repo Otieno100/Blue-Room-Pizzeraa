@@ -1,6 +1,15 @@
-#large{
+#b{
 
 display: none;
 border-radius: 20px;
 
+}
+
+
+
+#view{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    justify-content: space-around;
 }
