@@ -1,5 +1,5 @@
 ## Blue-Room-Pizeera
-This landing for Delani studio
+This is a website for Blue Room pizza inn 
 
 ### project description section
 ### author
