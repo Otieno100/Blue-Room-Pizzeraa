@@ -1,7 +1,17 @@
 
 
+
+
+
+
+
+
+
 $(document).ready(function(){
 $("p").alert("  Hello")
+
+
+
 
 $('.btn.order').click(function() {
     let sizeOfPizza = $(".size option:selected").val();
@@ -32,10 +42,9 @@ function Pizza(size, toppings, crust, total, orderNo) {
 
 
   $('.btn.add-pizza').click(function() {
-    var sizeOfPizza = $(".size option:selected").val();
-    var toppingsOfPizza = $(".toppings option:selected").val();
-    var crustOfPizza = $(".crust option:selected").val();
-    var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
+    let sizeOfPizza = $(".size option:selected").val();
+    let toppingsOfPizza = $(".toppings option:selected").val();    let crustOfPizza = $(".crust option:selected").val();
+    let total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
     order = order + 1;
     grandTotal = grandTotal + total;
 
