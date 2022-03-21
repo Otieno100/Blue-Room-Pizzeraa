@@ -106,8 +106,9 @@ let deliveryFee = 650
           let total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
           order = order + 1;
           grandTotal = grandTotal + order;
+      
 
-          yourTotal = yourTotal + total + 650
+          yourTotal = yourTotal + total + 650 
 
           let newPizza = new Pizza(sizeOfPizza, toppingsOfPizza, crustOfPizza, total, order);
 
@@ -165,16 +166,22 @@ $("#sub").click(function(){
 
 })
 
+
+
+$(document).ready(function(){
+  $("deliv").click(function(){
+    alert("Your delivery will be dispatched within 2hrs")
+  })})
+
 $(document).ready(function(){
   $("#sub").click(function(){
   
 prompt("will you like to be delivered at an additional fee of 650")
+prompt("type your location")
+alert("your delivery will be dispatched within 2hrs...Thank you for shopping with us!!")
   
   })})
-$(document).ready(function(){
-  $("delivered").click(function(){
-    alert("Your delivery will be dispatched within 2hrs")
-  })})
+
 
 
 // $("#sub").click(function(){
