@@ -1,25 +1,5 @@
 
 
-
-
-
-
-
-
-
-
-
-
-
-// let sizeOfPizza = document.getElementById("text-1").innerHTML.value
-// let toppingsOfPizza=document.getElementById("test-1").innerHTML.value
-// let crustOfPizza = document.getElementById("demo").innerHTML.value
-// let total = parseInt(sizeOfPizza)+ parseInt(toppingsOfPizza)+parseInt(crustOfPizza);
-// let order = 1;
-// let grandTotal = 0
-
-
-
 $(document).ready(function () {
   $("p").alert("  Hello")
 
@@ -104,6 +84,3 @@ $(docuent).ready(function () {
   })
 
 })
-
-
-// end of js
