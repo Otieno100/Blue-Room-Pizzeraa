@@ -107,7 +107,7 @@ let deliveryFee = 650
           order = order + 1;
           grandTotal = grandTotal + order;
 
-          yourTotal = yourTotal + total
+          yourTotal = yourTotal + total + 650
 
           let newPizza = new Pizza(sizeOfPizza, toppingsOfPizza, crustOfPizza, total, order);
 
@@ -165,7 +165,16 @@ $("#sub").click(function(){
 
 })
 
-
+$(document).ready(function(){
+  $("#sub").click(function(){
+  
+prompt("will you like to be delivered at an additional fee of 650")
+  
+  })})
+$(document).ready(function(){
+  $("delivered").click(function(){
+    alert("Your delivery will be dispatched within 2hrs")
+  })})
 
 
 // $("#sub").click(function(){
@@ -178,6 +187,9 @@ document.ready(function(){
     alert("your order has been received and you will be dispatched within 2hours")
   })
 })
+
+
+
 
 
 // untracked
@@ -217,4 +229,12 @@ document.ready(function(){
 //       "Your new total price is Ksh " +
 //       grandTotal +
 //       ". Our delivery guy will be at your doorstep soon. Enter your details below.";
-//   });
+//   }); 
+
+
+$(document).ready(function(){
+$("#sub").click(function(){
+
+prompt("will you like to be dlivered at an additional fee of 650")
+
+})})
